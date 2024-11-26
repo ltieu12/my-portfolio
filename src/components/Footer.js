@@ -6,24 +6,24 @@ export default function Footer() {
         <div className="font-medium">&copy; 2024 Lam Tieu</div>
         <ul className="flex flex-row space-x-8">
           <li>
-            <a href="#" className="font-medium hover:underline">
+            <a href="/" className="font-medium hover:underline">
               About
             </a>
           </li>
           <li>
-            <a href="#" className="font-medium hover:underline">
+            <a href="/projects" className="font-medium hover:underline">
               Projects
             </a>
           </li>
           <li>
-            <a href="#" className="font-medium hover:underline">
+            <a href="/contact" className="font-medium hover:underline">
               Contact
             </a>
           </li>
         </ul>
         <ul className="flex flex-row space-x-8">
           <li>
-            <a href="#">
+            <a href="mailto:tieunhatlam1210@gmail.com">
               <svg
                 width="40"
                 height="40"
@@ -45,7 +45,7 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/lam-tieu-086621274/">
               <svg
                 width="40"
                 height="40"
@@ -73,7 +73,7 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.instagram.com/lam.tieu12_/">
               <svg
                 width="40"
                 height="40"
