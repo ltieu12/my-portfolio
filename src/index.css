@@ -15,3 +15,10 @@ body {
   font-weight: 500;
 }
 
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/src/assets/fonts/ClashDisplay-Medium.ttf') format('truetype'),
+       url('/src/assets/fonts/ClashDisplay-Bold.ttf') format('truetype');
+  font-style: normal;
+}
+

@@ -3,7 +3,7 @@ export default function NavBar() {
         <>
             <nav>
                 <div className='container mx-auto py-6 flex justify-between items-center'>
-                    <div className='text-2xl font-bold'>LamTieu</div>
+                    <div className='text-4xl font-Clash font-medium'>LamTieu</div>
                     <div className="w-full md:block md:w-auto">
                         <ul className="font-medium flex flex-col md:p-0 md:flex-row md:space-x-8">
                             <li>
