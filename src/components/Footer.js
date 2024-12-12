@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="border-b-4 border-black"></div>
-      <div className="container mx-auto py-6 flex justify-between items-center">
+      <div className="container h-36 mx-auto py-6 flex justify-between items-center">
         <div className="font-medium">&copy; 2024 Lam Tieu</div>
         <ul className="flex flex-row space-x-8">
           <li>

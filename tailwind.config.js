@@ -14,6 +14,9 @@ module.exports = {
       },
       colors: {
         'custom-orange': '#FFE2A3',
+      },
+      borderWidth: {
+        '3': '3px',
       }
     },
   },

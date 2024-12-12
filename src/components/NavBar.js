@@ -2,7 +2,7 @@ export default function NavBar() {
     return (
         <>
             <nav>
-                <div className='container mx-auto py-6 flex justify-between items-center'>
+                <div className='container mx-auto py-6 px-4 h-24 flex justify-between items-center'>
                     <div className='text-4xl font-Clash font-medium'>LamTieu</div>
                     <div className="w-full md:block md:w-auto">
                         <ul className="font-medium flex flex-col md:p-0 md:flex-row md:space-x-8">
