@@ -11,9 +11,14 @@ module.exports = {
       },
       boxShadow: {
         'dark-shadow': '2px 3px 0px rgba(0, 0, 0, 1)',
+        'dark-shadow-lg': '6px 8px 0px rgba(0, 0, 0, 1)',
+        'project-shadow-left': '-4px 5px 0px rgba(0, 0, 0, 1)',
+        'project-shadow-right': '4px 5px 0px rgba(0, 0, 0, 1)',
       },
       colors: {
         'custom-orange': '#FFE2A3',
+        'custom-baby-blue': '#A7DFFF',
+        'custom-baby-green': '#D3FFA5',
       },
       borderWidth: {
         '3': '3px',

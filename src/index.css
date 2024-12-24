@@ -17,8 +17,16 @@ body {
 
 @font-face {
   font-family: 'Clash Display';
-  src: url('/src/assets/fonts/ClashDisplay-Medium.ttf') format('truetype'),
-       url('/src/assets/fonts/ClashDisplay-Bold.ttf') format('truetype');
+  src: url('/src/assets/fonts/ClashDisplay-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium */
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('/src/assets/fonts/ClashDisplay-Semibold.ttf') format('truetype');
+  font-weight: 600; /* Bold */
+  font-style: normal;
+}
+
 
