@@ -45,6 +45,7 @@ const ImageSlider = () => {
         ></div>
     ))}
 
+    {/* Duplicate images for looping effect */}
     {images.map((image, index) => (
         <div
           key={`duplicate-${index}`}
