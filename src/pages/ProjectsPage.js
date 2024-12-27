@@ -1,4 +1,5 @@
 import { Arrow } from "../components/Arrow";
+import ImageSlider from "../components/ImageSlider";
 
 export const ProjectsPage = () => {
     return (
@@ -45,7 +46,10 @@ export const ProjectsPage = () => {
 
                 <div className="md:w-1/2 md:text-left space-y-5">
                     <div className="bg-red-500 px-8 pt-8 pb-14 shadow-project-shadow-right rounded-lg border-3 border-black">
-                        <img src="/projects-img/StudyPal.png" alt="StudyPal website"></img>
+                        <video className="w-full h-full border-3 border-black" autoplay controls>
+                            <source src="/video/Pawfect Match.mp4"></source>
+                            Pawfect Match run-through video    
+                        </video>
                     </div>
                 </div>
             </div>
@@ -116,6 +120,12 @@ export const ProjectsPage = () => {
                         <img src="/projects-img/SafelyHome.png" alt="SafelyHome mobile design"></img>
                     </div>
                 </div>
+            </div>
+
+            <div className="container mx-auto px-24 mt-20 mb-32">
+                <h2 className="text-4xl font-Clash font-semibold text-left mt-14 mb-2">Coloring</h2>
+                <p className="text-left mb-6">Please enjoy some colors I have done as a hobby!</p>
+                <ImageSlider />
             </div>
         </>
     );
