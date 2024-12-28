@@ -4,8 +4,8 @@ import { Arrow } from "../components/Arrow";
 export const AboutPage = () => {
     return (
         <>
-            <div className='container mx-auto px-24 mt-20 flex justify-between items-center'>
-                <div className="md:w-1/2 md:text-left space-y-5">
+            <div className='container mx-auto px-12 mt-32 md:px-24 md:mt-20 flex flex-col md:flex-row md:justify-between md:items-center'>
+                <div className="pb-16 md:pb-0 md:w-1/2 text-left space-y-5">
                     <h1 className="text-7xl font-Clash">Hi, I’m Lam!</h1>
                     <p className="text-lg">
                     I do some coding and designing.<br />Grab a coffee, explore my projects, and let's build something amazing!
@@ -17,10 +17,10 @@ export const AboutPage = () => {
                 <img src="/Profile Pic.png" alt="Profile Pic"></img>
             </div>
 
-            <div className='container mx-auto px-24 mt-32 flex justify-between items-center'>
+            <div className='container mx-auto px-12 md:px-24 mt-32 flex flex-col-reverse md:flex-row md:justify-between md:items-center'>
                 <img src="/Browser.png" alt="About me browser illustration"></img>
-                <div className="md:w-1/2 md:text-left space-y-5 ml-16">
-                    <h2 className="text-6xl font-Clash">About Me</h2>
+                <div className="pb-16 md:p-0 md:w-1/2 text-left space-y-5 md:ml-16">
+                    <h2 className="text-5xl md:text-6xl font-Clash">About Me</h2>
                     <p className="text-lg">My name is Lam Tieu. I am passionate about web development and UX/UI design. I am more experienced as a developer due to my CS background, but designing has always been my interest that I self-learn and improve myself everyday.
                         <br /><br />I live in Canada but originally from Vietnam. Let's connect and I'll tell you all the good dishes that you should try!
                     </p>
@@ -41,10 +41,10 @@ export const AboutPage = () => {
                 </div>
             </div>
 
-            <div className="container mx-auto my-32 px-28 gap-20 flex justify-between">
+            <div className="container mx-auto my-32 px-18 md:px-28 gap-20 flex flex-col md:flex-row md:justify-between">
                 <div className="md:w-3/4 md:text-left space-y-5">
                     <h2 className="text-5xl font-Clash pb-2">Education</h2>
-                    <p className="font-bold text-lg">
+                    <p className="font-bold text-lg pb-10 md:pb-0">
                         <span className="text-red-500 inline-block pb-2">2020 - 2024</span><br />
                         Bachelor of Computer Science <br /><span className="font-normal">Dalhousie University</span>
                     </p>
@@ -56,7 +56,7 @@ export const AboutPage = () => {
                         <span className="font-normal">Microsoft</span>
                     </p>
                     
-                    <p className="font-bold text-lg py-2">
+                    <p className="font-bold text-lg py-2 pb-10 md:pb-0">
                         <span className="text-red-500 inline-block pb-2">Dec 2024</span><br />
                         Communication Technologies and Cyber Security<br />
                         <span className="font-normal">Dalhousie University</span>
@@ -65,8 +65,8 @@ export const AboutPage = () => {
 
                 <div className="md:w-1/2 md:text-left space-y-5">
                     <h2 className="text-5xl font-Clash">Experiences</h2>
-                    <div className="flex py-2">
-                        <img className="h-max pt-2" src="/Timeline.png" alt="About me browser illustration"></img>
+                    <div className="md:flex py-2">
+                        <img className="hidden md:block md:h-max md:pt-2" src="/Timeline.png" alt="Timeline illustration"></img>
                         <div className="px-8">
                             <p className="font-bold text-lg pb-12">
                                 <span className="text-red-500 inline-block pb-2">Sep 2023 - Dec 2023</span><br />

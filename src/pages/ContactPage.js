@@ -76,7 +76,7 @@ export const ContactPage = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="w-full max-w-md">
+                <div className="w-full max-w-lg">
                     <Form />
                 </div>
             </div>

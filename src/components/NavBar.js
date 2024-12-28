@@ -34,7 +34,7 @@ export default function NavBar() {
 
                 {/* Mobile NavBar */}
                 {isOpen && (
-                    <div className="md:hidden mb-4">
+                    <div className="md:hidden border-t-4 border-black p-5 bg-custom-orange">
                         <ul className="flex flex-col space-y-4">
                             <li>
                                 <a href="/" className="px-2 py-1 hover:rounded-xl hover:text-yellow-200 hover:border-2 hover:border-black hover:bg-purple-500 hover:shadow-dark-shadow">
@@ -47,7 +47,7 @@ export default function NavBar() {
                                 </a>
                             </li>
                             <li>
-                                <a href="/contact" className="px-2 py-1 rounded-xl border-2 border-white hover:text-yellow-200 hover:border-black hover:bg-purple-500 hover:shadow-dark-shadow">
+                                <a href="/contact" className="px-2 py-1 rounded-xl hover:text-yellow-200 hover:border-2 hover:border-black hover:bg-purple-500 hover:shadow-dark-shadow">
                                     Contact
                                 </a>
                             </li>
