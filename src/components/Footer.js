@@ -34,7 +34,7 @@ export default function Footer() {
               <ContactLink src={"LinkedIn"} />
             </li>
             <li>
-              <ContactLink src={"GitHub"} />
+              <ContactLink src={"Instagram"} />
             </li>
           </ul>
         </div>

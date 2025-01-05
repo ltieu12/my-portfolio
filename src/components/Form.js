@@ -10,7 +10,7 @@ const Form = () => {
 
     return (
         <>
-            <form className="bg-yellow-300 shadow-dark-shadow-lg my-4 p-12 rounded-xl border-3 border-black">
+            <form className="bg-yellow-300 shadow-dark-shadow-lg my-4 p-10 md:p-12 rounded-xl border-3 border-black">
                 <div className="mb-6">
                     <label className="block text-left" htmlFor="firstName">First Name</label>
                     <input className="border-2 rounded-md border-black w-full px-2 py-1" type="text" value={formData.firstName} required></input>
