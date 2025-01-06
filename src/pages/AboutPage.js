@@ -4,20 +4,20 @@ import { Arrow } from "../components/Arrow";
 export const AboutPage = () => {
     return (
         <>
-            <div className='container mx-auto px-12 mt-32 md:px-24 md:mt-20 flex flex-col md:flex-row md:justify-between md:items-center'>
+            <div className='container mx-auto px-10 mt-28 md:px-24 md:mt-20 flex flex-col md:flex-row md:justify-between md:items-center'>
                 <div className="pb-16 md:pb-0 md:w-1/2 text-left space-y-5">
                     <h1 className="text-6xl md:text-7xl font-Clash">Hi, I’m Lam!</h1>
                     <p className="text-lg">
                     I do some coding and designing.<br />Grab a coffee, explore my projects, and let's build something amazing!
                     </p>
-                    <a href="#" className="inline-flex items-center px-4 py-2 font-medium bg-lime-200 border-3 border-black rounded-lg shadow-dark-shadow hover:bg-lime-300">My Resume 
+                    <a href="https://drive.google.com/file/d/19JBGAxuQzqHNZVe1E5gOGGInXz0iooBN/view" className="inline-flex items-center px-4 py-2 font-medium bg-lime-200 border-3 border-black rounded-lg shadow-dark-shadow hover:bg-lime-300">My Resume 
                         <Arrow />
                     </a>
                 </div>
                 <img src="/Profile Pic.png" alt="Profile Pic"></img>
             </div>
 
-            <div className='container mx-auto px-12 md:px-24 mt-32 flex flex-col-reverse md:flex-row md:justify-between md:items-center'>
+            <div className='container mx-auto px-10 md:px-24 mt-32 flex flex-col-reverse md:flex-row md:justify-between md:items-center'>
                 <img src="/Browser.png" alt="About me browser illustration"></img>
                 <div className="pb-16 md:p-0 md:w-1/2 text-left space-y-5 md:ml-16">
                     <h2 className="text-5xl md:text-6xl font-Clash">About Me</h2>
@@ -27,7 +27,7 @@ export const AboutPage = () => {
                 </div>
             </div>
 
-            <div className="mx-auto mt-32 pt-16 pb-24 bg-custom-orange border-y-4 border-black">
+            <div className="mx-auto mt-32 pt-16 pb-24 px-1 bg-custom-orange border-y-4 border-black">
                 <h2 className="text-6xl md:text-7xl font-Clash">What I Know</h2>
                 <div className="max-w-sm md:max-w-4xl mx-auto grid grid-cols-2 gap-y-4 md:grid-cols-4 md:gap-y-8 pt-12 justify-items-center">
                     <Skill browserImgSrc={"/skills-img/React Icon.png"} mobileImgSrc={"/skills-img/React Icon (small).png"} altText={"React Logo"} />
