@@ -4,8 +4,8 @@ import { Arrow } from "../components/Arrow";
 export const AboutPage = () => {
     return (
         <>
-            <div className='container mx-auto px-10 mt-28 md:px-24 md:mt-20 flex flex-col md:flex-row md:justify-between md:items-center'>
-                <div className="pb-16 md:pb-0 md:w-1/2 text-left space-y-5">
+            <div className='container mx-auto px-10 mt-28 md:px-24 lg:mt-20 flex flex-col lg:flex-row lg:justify-between lg:items-center'>
+                <div className="pb-16 lg:pb-0 lg:w-1/2 text-left space-y-5">
                     <h1 className="text-6xl md:text-7xl font-Clash">Hi, I’m Lam!</h1>
                     <p className="text-lg">
                     I do some coding and designing.<br />Grab a coffee, explore my projects, and let's build something amazing!
@@ -17,9 +17,9 @@ export const AboutPage = () => {
                 <img src="/Profile Pic.png" alt="Profile Pic"></img>
             </div>
 
-            <div className='container mx-auto px-10 md:px-24 mt-32 flex flex-col-reverse md:flex-row md:justify-between md:items-center'>
+            <div className='container mx-auto px-10 md:px-24 mt-32 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center'>
                 <img src="/Browser.png" alt="About me browser illustration"></img>
-                <div className="pb-16 md:p-0 md:w-1/2 text-left space-y-5 md:ml-16">
+                <div className="pb-16 lg:p-0 lg:w-1/2 text-left space-y-5 lg:ml-16">
                     <h2 className="text-5xl md:text-6xl font-Clash">About Me</h2>
                     <p className="text-lg">My name is Lam Tieu. I am passionate about web development and UX/UI design. I am more experienced as a developer due to my CS background, but designing has always been my interest that I self-learn and improve myself everyday.
                         <br /><br />I live in Canada but originally from Vietnam. Let's connect and I'll tell you all the good dishes that you should try!
@@ -29,7 +29,7 @@ export const AboutPage = () => {
 
             <div className="mx-auto mt-32 pt-16 pb-24 px-1 bg-custom-orange border-y-4 border-black">
                 <h2 className="text-6xl md:text-7xl font-Clash">What I Know</h2>
-                <div className="max-w-sm md:max-w-4xl mx-auto grid grid-cols-2 gap-y-4 md:grid-cols-4 md:gap-y-8 pt-12 justify-items-center">
+                <div className="max-w-sm lg:max-w-4xl mx-auto grid grid-cols-2 gap-y-4 md:gap-x-10 lg:grid-cols-4 lg:gap-y-8 pt-12 justify-items-center">
                     <Skill browserImgSrc={"/skills-img/React Icon.png"} mobileImgSrc={"/skills-img/React Icon (small).png"} altText={"React Logo"} />
                     <Skill browserImgSrc={"/skills-img/Vue.js Icon.png"} mobileImgSrc={"/skills-img/Vue.js Icon (small).png"} altText={"Vue.js Logo"} />
                     <Skill browserImgSrc={"/skills-img/Angular Icon.png"} mobileImgSrc={"/skills-img/Angular Icon (small).png"} altText={"Angular Logo"} />
@@ -41,10 +41,10 @@ export const AboutPage = () => {
                 </div>
             </div>
 
-            <div className="container mx-auto my-32 px-18 md:px-28 gap-20 flex flex-col md:flex-row md:justify-between">
-                <div className="md:w-3/4 md:text-left space-y-5">
+            <div className="container mx-auto my-32 px-18 lg:px-28 gap-20 flex flex-col lg:flex-row lg:justify-between">
+                <div className="lg:w-3/4 lg:text-left space-y-5">
                     <h2 className="text-5xl font-Clash pb-2">Education</h2>
-                    <p className="font-bold text-lg pb-10 md:pb-0">
+                    <p className="font-bold text-lg pb-10 lg:pb-0">
                         <span className="text-red-500 inline-block pb-2">2020 - 2024</span><br />
                         Bachelor of Computer Science <br /><span className="font-normal">Dalhousie University</span>
                     </p>
@@ -56,17 +56,17 @@ export const AboutPage = () => {
                         <span className="font-normal">Microsoft</span>
                     </p>
                     
-                    <p className="font-bold text-lg py-2 pb-10 md:pb-0">
+                    <p className="font-bold text-lg py-2 pb-10 lg:pb-0">
                         <span className="text-red-500 inline-block pb-2">Dec 2024</span><br />
                         Communication Technologies and Cyber Security<br />
                         <span className="font-normal">Dalhousie University</span>
                     </p>
                 </div>
 
-                <div className="md:w-1/2 md:text-left space-y-5">
+                <div className="lg:w-1/2 lg:text-left space-y-5">
                     <h2 className="text-5xl font-Clash">Experiences</h2>
-                    <div className="md:flex py-2">
-                        <img className="hidden md:block md:h-max md:pt-2" src="/Timeline.png" alt="Timeline illustration"></img>
+                    <div className="lg:flex py-2">
+                        <img className="hidden lg:block lg:h-max lg:pt-2" src="/Timeline.png" alt="Timeline illustration"></img>
                         <div className="px-8">
                             <p className="font-bold text-lg pb-12">
                                 <span className="text-red-500 inline-block pb-2">Sep 2023 - Dec 2023</span><br />
