@@ -11,11 +11,12 @@ const ImageSlider = () => {
       interval = setInterval(() => {
         if (slider) {
           slider.scrollLeft += 1;
-          if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth) {
+
+          if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth - 1) {
             slider.scrollLeft = 0;
           }
         }
-      }, 30);
+      }, 40);
     };
 
     startSlider();
@@ -35,7 +36,7 @@ const ImageSlider = () => {
     <div
         ref={sliderRef}
         className="flex overflow-x-scroll scrollbar-hide w-full space-x-4"
-        style={{ scrollBehavior: "smooth" }}
+        style={{ scrollBehavior: "auto" }}
     >
     {images.map((image, index) => (
         <div
@@ -45,14 +46,6 @@ const ImageSlider = () => {
         ></div>
     ))}
 
-    {/* Duplicate images for looping effect */}
-    {images.map((image, index) => (
-        <div
-          key={`duplicate-${index}`}
-          className="flex-shrink-0 w-60 h-60 bg-cover bg-center"
-          style={{ backgroundImage: `url(${image})` }}
-        ></div>
-      ))}
     </div>
   );
 };

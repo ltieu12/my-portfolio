@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="border-b-4 border-black"></div>
-      <div className="container h-36 mx-auto px-10 md:px-0 py-10 md:py-6 flex flex-row justify-between md:items-center">
+      <div className="container h-36 mx-auto px-8 lg:px-0 py-10 md:py-6 flex flex-row justify-between md:items-center">
 
         {/* Desktop Footer */}
         <div className="hidden md:contents">
@@ -42,7 +42,7 @@ export default function Footer() {
       {/* Mobile Footer */}
         <div className="md:hidden contents">
           <div className="text-left space-y-3">
-            <div>&copy; 2024 Lam Tieu</div>
+            <div>&copy; 2025 Lam Tieu</div>
             <ul className="flex flex-row space-x-2">
               <li>
                 <ContactLink src={"Gmail"} />
