@@ -59,7 +59,11 @@ export const ProjectsPage = () => {
                     <h3 className="text-3xl font-Clash font-semibold">Personal Portfolio</h3>
                     <ProjectKeywords bgColor="bg-orange-300" keywords={["React", "NodeJS", "Figma"]} />
                     <p>What can I say more? You're looking at it! This website summarizes all of my experiences as well as projects I have done so far.</p>
-                    <a href="https://github.com/ltieu12/my-portfolio" className="text-xl md:text-2xl inline-block pt-5 inline-flex items-center gap-2 hover:underline">Visit GitHub
+                    <a href="https://www.figma.com/proto/eiOV8lAKvW46a7AHdt5b7A/Portfolio?node-id=2-2&t=6kOpVcyWhAGAz4q7-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" className="text-xl md:text-2xl pt-5 inline-flex items-center gap-2 hover:underline">Visit prototype
+                        <Arrow />
+                    </a> 
+                    <br />
+                    <a href="https://github.com/ltieu12/my-portfolio" className="text-xl md:text-2xl inline-flex items-center gap-2 hover:underline">Visit GitHub
                         <Arrow />
                     </a>
                 </div>

@@ -11,10 +11,6 @@ const ImageSlider = () => {
       interval = setInterval(() => {
         if (slider) {
           slider.scrollLeft += 1;
-
-          if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth - 1) {
-            slider.scrollLeft = 0;
-          }
         }
       }, 40);
     };
