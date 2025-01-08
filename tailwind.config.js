@@ -17,6 +17,7 @@ module.exports = {
         'project-shadow-right': '5px 6px 0px rgba(0, 0, 0, 1)',
       },
       colors: {
+        'primary': '#FEFFF0',
         'custom-orange': '#FFE2A3',
         'custom-baby-blue': '#A7DFFF',
         'custom-baby-green': '#D3FFA5',

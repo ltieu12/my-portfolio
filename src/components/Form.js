@@ -10,6 +10,8 @@ const Form = () => {
 
     const [errors, setErrors] = useState([]);
 
+    const [isModalOpen, setModalOpen] = useState(false);
+
     const saveData = (e) => {
         const {name, value} = e.target;
         setFormData({
@@ -58,10 +60,15 @@ const Form = () => {
 
         if (Object.keys(newErrors).length === 0) {
             console.log("Form submitted successfully!");
+            setModalOpen(true);
         }
         else {
             console.log("Errors in form validation!");
         }
+    }
+
+    const closeModal = () => {
+        setModalOpen(false);
     }
 
     return (
@@ -108,6 +115,25 @@ const Form = () => {
                     <button className="px-5 py-1 font-medium" type="submit">Send</button>
                 </div>
             </form>
+
+            {isModalOpen && (
+                <div className="fixed inset-0 bg-gray-900 bg-opacity-60 flex items-center justify-center z-50">
+                    <div className="bg-primary p-6 rounded-lg border-3 border-black w-96 text-center">
+                        <h2 className="text-2xl font-semibold text-lime-600">
+                            Success
+                        </h2>
+                        <p className="mt-2">
+                            Your form has been submitted successfully!
+                        </p>
+                        <button
+                            onClick={closeModal}
+                            className="mt-4 bg-red-300 px-4 py-2 rounded-lg hover:bg-red-400 shadow-dark-shadow border-2 border-black"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            )}
         </>
     );
 }
