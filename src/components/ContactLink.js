@@ -2,7 +2,7 @@ export const ContactLink = ({src, text}) => {
   if (src === "LinkedIn") {
     return (
       <>
-          <a href="https://www.linkedin.com/in/lam-tieu-086621274/" className="flex flex-row gap-2 items-center">
+          <a href="https://www.linkedin.com/in/lam-tieu-086621274/" target="_blank" className="flex flex-row gap-2 items-center" rel="noreferrer">
               <svg
                 width="40"
                 height="40"
@@ -60,7 +60,7 @@ export const ContactLink = ({src, text}) => {
   else {
     return (
       <>
-        <a href="https://www.instagram.com/lam.tieu12_/" className="flex flex-row gap-2 items-center">
+        <a href="https://www.instagram.com/lam.tieu12_/" target="_blank" className="flex flex-row gap-2 items-center" rel="noreferrer">
           <svg
             width="40"
             height="40"
