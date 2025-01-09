@@ -57,7 +57,7 @@ export const ProjectsPage = () => {
 
                 <div className="lg:w-1/2 lg:text-left mt-10 lg:mt-0 text-left space-y-4">
                     <h3 className="text-3xl font-Clash font-semibold">Personal Portfolio</h3>
-                    <ProjectKeywords bgColor="bg-orange-300" keywords={["React", "Tailwind CSS", "Figma"]} />
+                    <ProjectKeywords bgColor="bg-orange-300" keywords={["React", "Tailwind", "Figma"]} />
                     <p>What can I say more? You're looking at it! This website summarizes all of my experiences as well as projects I have done so far.</p>
                     <a href="https://www.figma.com/proto/eiOV8lAKvW46a7AHdt5b7A/Portfolio?node-id=2-2&t=6kOpVcyWhAGAz4q7-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank" className="text-xl md:text-2xl pt-5 inline-flex items-center gap-2 hover:underline" rel="noreferrer">Visit prototype
                         <Arrow />
@@ -70,7 +70,7 @@ export const ProjectsPage = () => {
             </div>
 
             {/* Mobile Design Section */}
-            <div className="container mx-auto px-10 lg:px-24 mt-20">
+            <div className="container mx-auto px-10 lg:px-24 mt-18">
                 <h2 className="text-4xl font-Clash font-semibold text-left mt-14 mb-6">Mobile Design</h2>
             </div>
 
@@ -113,7 +113,7 @@ export const ProjectsPage = () => {
             </div>
 
             {/* Coloring Section */}
-            <div className="container mx-auto px-10 lg:px-24 mt-20 mb-32">
+            <div className="container mx-auto px-10 lg:px-24 mt-18 mb-32">
                 <h2 className="text-4xl font-Clash font-semibold text-left mt-14 mb-2">Coloring</h2>
                 <p className="text-left mb-6">Please enjoy some colors I have done as a hobby!</p>
                 <ImageSlider />
