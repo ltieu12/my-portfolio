@@ -1,6 +1,8 @@
 # Welcome to my portfolio!
 
-This is the source code for my portfolio (link coming soon!).
+This is the source code for my portfolio.
+
+Visit the website here: https://lamtieu.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
