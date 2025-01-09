@@ -20,7 +20,7 @@ export const ProjectsPage = () => {
 
                 <div className="lg:w-1/2 mt-10 lg:mt-0 text-left space-y-4">
                     <h3 className="text-3xl font-Clash font-semibold">StudyPal E-Learning Website</h3>
-                    <ProjectKeywords bgColor="bg-yellow-200" keywords={["Vue.js", ".NET", "MongoDB"]} />
+                    <ProjectKeywords bgColor="bg-yellow-200" keywords={["Vue.js", ".NET 6", "MongoDB"]} />
                     <p>StudyPal is an e-learning web app that connects students with tutors or study groups for collaboration in their courses. I worked in a team of 4, focusing on designing and developing the user profile feature.</p>
                     <a href="https://github.com/MinhNguyenD/StudyPal" className="text-xl md:text-2xl inline-block pt-5 inline-flex items-center gap-2 hover:underline">Visit GitHub
                         <Arrow />
@@ -40,7 +40,7 @@ export const ProjectsPage = () => {
 
                 <div className="lg:w-1/2 lg:text-left space-y-5">
                     <div className="bg-red-500 px-5 md:px-10 pt-5 md:pt-8 pb-8 md:pb-14 shadow-project-shadow-left lg:shadow-project-shadow-right rounded-lg border-3 border-black">
-                        <video className="w-full h-full border-3 border-black" autoplay controls>
+                        <video className="w-full h-full border-3 border-black" autoPlay controls>
                             <source src="/video/Pawfect Match.mp4"></source>
                             Pawfect Match run-through video    
                         </video>
@@ -57,7 +57,7 @@ export const ProjectsPage = () => {
 
                 <div className="lg:w-1/2 lg:text-left mt-10 lg:mt-0 text-left space-y-4">
                     <h3 className="text-3xl font-Clash font-semibold">Personal Portfolio</h3>
-                    <ProjectKeywords bgColor="bg-orange-300" keywords={["React", "NodeJS", "Figma"]} />
+                    <ProjectKeywords bgColor="bg-orange-300" keywords={["React", "Tailwind CSS", "Figma"]} />
                     <p>What can I say more? You're looking at it! This website summarizes all of my experiences as well as projects I have done so far.</p>
                     <a href="https://www.figma.com/proto/eiOV8lAKvW46a7AHdt5b7A/Portfolio?node-id=2-2&t=6kOpVcyWhAGAz4q7-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" className="text-xl md:text-2xl pt-5 inline-flex items-center gap-2 hover:underline">Visit prototype
                         <Arrow />

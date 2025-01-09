@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 const Form = () => {
     const [formData, setFormData] = useState({
@@ -7,6 +8,11 @@ const Form = () => {
         email: '',
         message: '',
     });
+
+    const form = useRef();
+    const serviceID = process.env.REACT_APP_EMAIL_SERVICE_ID;
+    const templateID = process.env.REACT_APP_EMAIL_TEMPLATE_ID;
+    const emailPublicKey = process.env.REACT_APP_EMAIL_PUBLIC_KEY; 
 
     const [errors, setErrors] = useState([]);
 
@@ -59,8 +65,24 @@ const Form = () => {
         setErrors(newErrors);
 
         if (Object.keys(newErrors).length === 0) {
-            console.log("Form submitted successfully!");
-            setModalOpen(true);
+            emailjs.sendForm(serviceID, templateID, form.current, {
+                publicKey: emailPublicKey,
+            })
+            .then(
+                () => {
+                    console.log("Form submitted successfully!");
+                    setModalOpen(true);
+                    setFormData({
+                        firstName: '',
+                        lastName: '',
+                        email: '',
+                        message: '',
+                    })
+                },
+                (error) => {
+                    console.log("Error occurs when sending email", error.text);
+                }
+            );
         }
         else {
             console.log("Errors in form validation!");
@@ -73,7 +95,7 @@ const Form = () => {
 
     return (
         <>
-            <form className="bg-yellow-300 shadow-dark-shadow-lg-left lg:shadow-dark-shadow-lg my-4 p-8 md:p-12 rounded-xl border-3 border-black" onSubmit={submitForm}>
+            <form className="bg-yellow-300 shadow-dark-shadow-lg-left lg:shadow-dark-shadow-lg my-4 p-8 md:p-12 rounded-xl border-3 border-black" ref={form} onSubmit={submitForm}>
                 <div className="mb-6">
                     <label className="block text-left" htmlFor="firstName">First Name</label>
                     <input className="border-2 rounded-md border-black w-full px-2 py-1" type="text" name="firstName" value={formData.firstName} onChange={saveData} required></input>
