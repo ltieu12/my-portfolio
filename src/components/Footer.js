@@ -2,7 +2,7 @@ import { ContactLink } from "./ContactLink";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="mt-auto">
       <div className="border-b-4 border-black"></div>
       <div className="container h-36 mx-auto px-8 lg:px-0 py-10 md:py-6 flex flex-row justify-between md:items-center">
 

@@ -10,7 +10,7 @@ export const AboutPage = () => {
                     <p className="text-lg">
                     I do some coding and designing.<br />Grab a coffee, explore my projects, and let's build something amazing!
                     </p>
-                    <a href="https://drive.google.com/file/d/19JBGAxuQzqHNZVe1E5gOGGInXz0iooBN/view" className="inline-flex items-center px-4 py-2 font-medium bg-lime-200 border-3 border-black rounded-lg shadow-dark-shadow hover:bg-lime-300">My Resume 
+                    <a href="https://drive.google.com/file/d/19JBGAxuQzqHNZVe1E5gOGGInXz0iooBN/view" target="_blank" rel="noreferrer" className="inline-flex items-center px-4 py-2 font-medium bg-lime-200 border-3 border-black rounded-lg shadow-dark-shadow hover:bg-lime-300">My Resume 
                         <Arrow />
                     </a>
                 </div>
@@ -27,7 +27,7 @@ export const AboutPage = () => {
                 </div>
             </div>
 
-            <div className="mx-auto mt-32 pt-16 pb-24 px-1 bg-custom-orange border-y-4 border-black">
+            <div className="mx-auto w-full mt-32 pt-16 pb-24 px-1 bg-custom-orange border-y-4 border-black">
                 <h2 className="text-6xl md:text-7xl font-Clash">What I Know</h2>
                 <div className="max-w-sm lg:max-w-4xl mx-auto grid grid-cols-2 gap-y-4 md:gap-x-10 lg:grid-cols-4 lg:gap-y-8 pt-12 justify-items-center">
                     <Skill browserImgSrc={"/skills-img/React Icon.png"} mobileImgSrc={"/skills-img/React Icon (small).png"} altText={"React Logo"} />
