@@ -22,7 +22,11 @@ export const ProjectsPage = () => {
                     <h3 className="text-3xl font-Clash font-semibold">StudyPal E-Learning Website</h3>
                     <ProjectKeywords bgColor="bg-yellow-200" keywords={["Vue.js", ".NET 6", "MongoDB"]} />
                     <p>StudyPal is an e-learning web app that connects students with tutors or study groups for collaboration in their courses. I worked in a team of 4, focusing on designing and developing the user profile feature.</p>
-                    <a href="https://github.com/MinhNguyenD/StudyPal" target="_blank" className="text-xl md:text-2xl inline-block pt-5 inline-flex items-center gap-2 hover:underline" rel="noreferrer">Visit GitHub
+                    <a href="https://www.figma.com/proto/E1mXKGUZki5KgCGzkU0Igc/StudyPal-Design?node-id=14-3&p=f&t=MstTTGzqGSkY1QPp-1&scaling=min-zoom&content-scaling=fixed&page-id=14%3A2&starting-point-node-id=14%3A3" target="_blank" className="text-xl md:text-2xl pt-5 inline-flex items-center gap-2 hover:underline" rel="noreferrer">Visit prototype
+                        <Arrow />
+                    </a> 
+                    <br />
+                    <a href="https://github.com/MinhNguyenD/StudyPal" target="_blank" className="text-xl md:text-2xl inline-block inline-flex items-center gap-2 hover:underline" rel="noreferrer">Visit GitHub
                         <Arrow />
                     </a>
                 </div>
