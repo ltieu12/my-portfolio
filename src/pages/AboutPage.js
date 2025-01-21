@@ -10,7 +10,7 @@ export const AboutPage = () => {
                     <p className="text-lg">
                     I do some coding and designing.<br />Grab a coffee, explore my projects, and let's build something amazing!
                     </p>
-                    <a href="https://drive.google.com/file/d/19JBGAxuQzqHNZVe1E5gOGGInXz0iooBN/view" target="_blank" rel="noreferrer" className="inline-flex items-center px-4 py-2 font-medium bg-lime-200 border-3 border-black rounded-lg shadow-dark-shadow hover:bg-lime-300">My Resume 
+                    <a href="https://drive.google.com/file/d/1QaXZ6BdFlEMs8ihUb6ZHdoKsGM4512Te/view?usp=sharing" target="_blank" rel="noreferrer" className="inline-flex items-center px-4 py-2 font-medium bg-lime-200 border-3 border-black rounded-lg shadow-dark-shadow hover:bg-lime-300">My Resume 
                         <Arrow />
                     </a>
                 </div>
