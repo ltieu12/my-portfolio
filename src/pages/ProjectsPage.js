@@ -13,7 +13,7 @@ export const ProjectsPage = () => {
 
             <div className='container mx-auto px-10 lg:px-24 mb-20 lg:mb-32 lg:flex lg:flex-row justify-between items-center gap-10'>
                 <div className="lg:max-w-1/2 lg:text-left space-y-5">
-                    <div className="bg-custom-baby-blue max-w-max px-5 md:px-10 pt-5 md:pt-8 pb-8 md:pb-14 shadow-project-shadow-left rounded-lg border-3 border-black">
+                    <div className="bg-custom-baby-blue max-w-max px-3 md:px-5 pt-3 shadow-dark-shadow-lg-left border-3 border-black">
                         <img src="/projects-img/StudyPal.png" alt="StudyPal website"></img>
                     </div>
                 </div>
@@ -43,8 +43,8 @@ export const ProjectsPage = () => {
                 </div>
 
                 <div className="lg:w-1/2 lg:text-left space-y-5">
-                    <div className="bg-red-500 px-5 md:px-10 pt-5 md:pt-8 pb-8 md:pb-14 shadow-project-shadow-left lg:shadow-project-shadow-right rounded-lg border-3 border-black">
-                        <video className="w-full h-full border-3 border-black" autoPlay controls>
+                    <div className="bg-red-500 px-5 md:px-7 pt-5 pb-8 md:pb-14 shadow-dark-shadow-lg-left lg:shadow-dark-shadow-lg border-3 border-black">
+                        <video className="w-full h-full border-2 border-black rounded-xl" autoPlay controls>
                             <source src="/video/Pawfect Match.mp4"></source>
                             Pawfect Match run-through video    
                         </video>
@@ -54,7 +54,7 @@ export const ProjectsPage = () => {
 
             <div className='container mx-auto px-10 lg:px-24 mb-20 lg:mb-32 lg:flex lg:flex-row justify-between items-center gap-10'>
                 <div className="lg:max-w-1/2 text-left space-y-5">
-                    <div className="bg-purple-400 max-w-max px-5 md:px-10 pt-5 md:pt-8 pb-8 md:pb-14 shadow-project-shadow-left rounded-lg border-3 border-black">
+                    <div className="bg-purple-400 max-w-max px-5 md:px-10 pt-5 md:pt-8 pb-8 md:pb-14 shadow-dark-shadow-lg-left rounded-lg border-3 border-black">
                         <img src="/projects-img/Portfolio.png" alt="Portfolio website"></img>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ export const ProjectsPage = () => {
 
             <div className='container mx-auto px-10 lg:px-24 mb-20 lg:mb-32 lg:flex lg:flex-row justify-between items-center gap-10'>
                 <div className="lg:max-w-1/2 text-left space-y-5">
-                    <div className="bg-yellow-200 max-w-max px-5 md:px-10 pt-5 md:pt-8 pb-8 md:pb-14 shadow-project-shadow-left rounded-lg border-3 border-black">
+                    <div className="bg-yellow-200 max-w-max px-5 md:px-10 pt-5 md:pt-8 pb-8 md:pb-14 shadow-dark-shadow-lg-left rounded-lg border-3 border-black">
                         <img src="/projects-img/NavigateDal.png" alt="NavigateDal mobile design"></img>
                     </div>
                 </div>
@@ -110,7 +110,7 @@ export const ProjectsPage = () => {
                 </div>
 
                 <div className="lg:max-w-1/2 text-left space-y-5">
-                    <div className="bg-lime-300 max-w-max px-5 md:px-10 pt-5 md:pt-8 pb-8 md:pb-14 shadow-project-shadow-left lg:shadow-project-shadow-right rounded-lg border-3 border-black">
+                    <div className="bg-lime-300 max-w-max px-5 md:px-10 pt-5 md:pt-8 pb-8 md:pb-14 shadow-dark-shadow-lg-left lg:shadow-dark-shadow-lg rounded-lg border-3 border-black">
                         <img src="/projects-img/SafelyHome.png" alt="SafelyHome mobile design"></img>
                     </div>
                 </div>

@@ -10,11 +10,9 @@ module.exports = {
         Clash: ["Clash Display", 'sans-serif'],
       },
       boxShadow: {
-        'dark-shadow': '2px 3px 0px rgba(0, 0, 0, 1)',
-        'dark-shadow-lg': '6px 8px 0px rgba(0, 0, 0, 1)',
-        'dark-shadow-lg-left': '-6px 8px 0px rgba(0, 0, 0, 1)',
-        'project-shadow-left': '-5px 6px 0px rgba(0, 0, 0, 1)',
-        'project-shadow-right': '5px 6px 0px rgba(0, 0, 0, 1)',
+        'dark-shadow': '3px 4px 0px rgba(0, 0, 0, 1)',
+        'dark-shadow-lg': '9px 10px 0px rgba(0, 0, 0, 1)',
+        'dark-shadow-lg-left': '-9px 10px 0px rgba(0, 0, 0, 1)',
       },
       colors: {
         'primary': '#FEFFF0',
