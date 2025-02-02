@@ -95,7 +95,7 @@ const Form = () => {
 
     return (
         <>
-            <form className="bg-yellow-300 shadow-dark-shadow-lg-left lg:shadow-dark-shadow-lg my-4 p-8 md:p-12 rounded-xl border-3 border-black" ref={form} onSubmit={submitForm}>
+            <form className="bg-yellow-300 shadow-dark-shadow-lg-left lg:shadow-dark-shadow-lg my-4 p-8 md:p-12 border-3 border-black" ref={form} onSubmit={submitForm}>
                 <div className="mb-6">
                     <label className="block text-left" htmlFor="firstName">First Name</label>
                     <input className="border-2 rounded-md border-black w-full px-2 py-1" type="text" name="firstName" value={formData.firstName} onChange={saveData} required></input>
