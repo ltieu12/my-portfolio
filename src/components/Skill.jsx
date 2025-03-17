@@ -1,4 +1,4 @@
-export default function Skill({browserImgSrc, mobileImgSrc, altText}) {
+const Skill = ({browserImgSrc, mobileImgSrc, altText}) => {
     return (
         <>
             <div className="md:hidden bg-white border-3 border-black rounded-3xl w-40 h-40 grid place-items-center">
@@ -13,3 +13,5 @@ export default function Skill({browserImgSrc, mobileImgSrc, altText}) {
         </>
     );
 }
+
+export default Skill;

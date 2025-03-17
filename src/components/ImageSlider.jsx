@@ -12,7 +12,7 @@ const ImageSlider = () => {
         if (slider) {
           slider.scrollLeft += 1;
         }
-      }, 40);
+      }, 30);
     };
 
     startSlider();

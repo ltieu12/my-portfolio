@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
+import InputField from "./InputField";
 
 const Form = () => {
     const [formData, setFormData] = useState({
@@ -68,21 +69,19 @@ const Form = () => {
             emailjs.sendForm(serviceID, templateID, form.current, {
                 publicKey: emailPublicKey,
             })
-            .then(
-                () => {
-                    console.log("Form submitted successfully!");
-                    setModalOpen(true);
-                    setFormData({
-                        firstName: '',
-                        lastName: '',
-                        email: '',
-                        message: '',
-                    })
-                },
-                (error) => {
-                    console.log("Error occurs when sending email", error.text);
-                }
-            );
+            .then(() => {
+                console.log("Form submitted successfully!");
+                setModalOpen(true);
+                setFormData({
+                    firstName: '',
+                    lastName: '',
+                    email: '',
+                    message: '',
+                })
+            })
+            .catch(error => {
+                console.log("Error occurs when sending email", error.text);
+            });
         }
         else {
             console.log("Errors in form validation!");
@@ -96,42 +95,10 @@ const Form = () => {
     return (
         <>
             <form className="bg-yellow-300 shadow-dark-shadow-lg-left lg:shadow-dark-shadow-lg my-4 p-8 md:p-12 border-3 border-black" ref={form} onSubmit={submitForm}>
-                <div className="mb-6">
-                    <label className="block text-left" htmlFor="firstName">First Name</label>
-                    <input className="border-2 rounded-md border-black w-full px-2 py-1" type="text" name="firstName" value={formData.firstName} onChange={saveData} required></input>
-                    {errors.firstName && (
-                        <p className="text-red-600 text-left">
-                            {errors.firstName}
-                        </p>
-                    )}
-                </div>
-                <div className="mb-6">
-                    <label className="block text-left" htmlFor="lastName">Last Name</label>
-                    <input className="border-2 rounded-md border-black w-full px-2 py-1" type="text" name="lastName" value={formData.lastName} onChange={saveData} required></input>
-                    {errors.lastName && (
-                        <p className="text-red-600 text-left">
-                            {errors.lastName}
-                        </p>
-                    )}
-                </div>
-                <div className="mb-6">
-                    <label className="block text-left" htmlFor="email">Email</label>
-                    <input className="border-2 rounded-md border-black w-full px-2 py-1" type="email" name="email" value={formData.email} onChange={saveData} required></input>
-                    {errors.email && (
-                        <p className="text-red-600 text-left">
-                            {errors.email}
-                        </p>
-                    )}
-                </div>
-                <div className="mb-6">
-                    <label className="block text-left" htmlFor="message">Message</label>
-                    <textarea className="border-2 rounded-md border-black w-full px-2 py-1" type="text" rows="3" name="message" value={formData.message} onChange={saveData} required></textarea>
-                    {errors.message && (
-                        <p className="text-red-600 text-left">
-                            {errors.message}
-                        </p>
-                    )}
-                </div>
+                <InputField type="text" label="First Name" name="firstName" value={formData.firstName} onChangeData={saveData} error={errors.firstName} />
+                <InputField type="text" label="Last Name" name="lastName" value={formData.lastName} onChangeData={saveData} error={errors.lastName} />
+                <InputField type="email" label="Email" name="email" value={formData.email} onChangeData={saveData} error={errors.email} />
+                <InputField type="textarea" label="Message" name="message" value={formData.message} onChangeData={saveData} error={errors.message} />
 
                 <div className="bg-blue-200 hover:bg-blue-300 shadow-dark-shadow border-2 border-black rounded-lg mt-6 w-max mx-auto">
                     <button className="px-5 py-1 font-medium" type="submit">Send</button>

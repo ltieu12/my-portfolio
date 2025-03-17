@@ -1,6 +1,6 @@
 import { ContactLink } from "./ContactLink";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer className="mt-auto">
       <div className="border-b-4 border-black"></div>
@@ -28,13 +28,13 @@ export default function Footer() {
           </ul>
           <ul className="flex flex-row space-x-8">
             <li>
-              <ContactLink src={"Gmail"} />
+              <ContactLink src="Gmail" />
             </li>
             <li>
-              <ContactLink src={"LinkedIn"} />
+              <ContactLink src="LinkedIn" />
             </li>
             <li>
-              <ContactLink src={"Instagram"} />
+              <ContactLink src="Instagram" />
             </li>
           </ul>
         </div>
@@ -45,13 +45,13 @@ export default function Footer() {
             <div>&copy; 2025 Lam Tieu</div>
             <ul className="flex flex-row space-x-2">
               <li>
-                <ContactLink src={"Gmail"} />
+                <ContactLink src="Gmail" />
               </li>
               <li>
-                <ContactLink src={"LinkedIn"} />
+                <ContactLink src="LinkedIn" />
               </li>
               <li>
-                <ContactLink src={"GitHub"} />
+                <ContactLink src="GitHub" />
               </li>
             </ul>
           </div>
@@ -79,3 +79,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer;
