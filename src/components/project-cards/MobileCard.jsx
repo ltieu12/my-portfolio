@@ -22,7 +22,7 @@ const MobileCard = ({title, description, projectBgColor, keywords, kwBgColor, im
                     </div>
 
                     <div className="lg:max-w-1/2 text-left space-y-5">
-                        <div className={`bg-${projectBgColor} max-w-max px-3 md:px-5 py-4 shadow-dark-shadow-lg-left lg:shadow-dark-shadow-lg border-3 border-black`}>
+                        <div className={`${projectBgColor} max-w-max px-3 md:px-5 py-4 shadow-dark-shadow-lg-left lg:shadow-dark-shadow-lg border-3 border-black`}>
                             <img src={imgSrc} alt={title}></img>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ const MobileCard = ({title, description, projectBgColor, keywords, kwBgColor, im
             ) : (
                 <div className='container mx-auto px-10 lg:px-24 mb-20 lg:mb-32 lg:flex lg:flex-row justify-between items-center gap-10'>
                     <div className="lg:max-w-1/2 text-left space-y-5">
-                        <div className={`bg-${projectBgColor} max-w-max px-3 md:px-5 pt-4 shadow-dark-shadow-lg-left border-3 border-black`}>
+                        <div className={`${projectBgColor} max-w-max px-3 md:px-5 pt-4 shadow-dark-shadow-lg-left border-3 border-black`}>
                             <img src={imgSrc} alt={title}></img>
                         </div>
                     </div>
