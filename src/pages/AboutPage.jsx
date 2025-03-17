@@ -4,6 +4,7 @@ import { Arrow } from "../components/Arrow";
 export const AboutPage = () => {
     return (
         <>
+            {/* Hero Section */}
             <div className='container mx-auto px-10 mt-28 md:px-24 lg:mt-20 flex flex-col lg:flex-row lg:justify-between lg:items-center'>
                 <div className="pb-16 lg:pb-0 lg:w-1/2 text-left space-y-5">
                     <h1 className="text-6xl md:text-7xl font-Clash">Hi, I’m Lam!</h1>
@@ -17,6 +18,7 @@ export const AboutPage = () => {
                 <img src="/Profile Pic.png" alt="Profile Pic"></img>
             </div>
 
+            {/* About Me Section */}
             <div className='container mx-auto px-10 md:px-24 mt-32 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center'>
                 <img src="/Browser.png" alt="About me browser illustration"></img>
                 <div className="pb-16 lg:p-0 lg:w-1/2 text-left space-y-5 lg:ml-16">
@@ -27,6 +29,7 @@ export const AboutPage = () => {
                 </div>
             </div>
 
+            {/* Skills Section */}
             <div className="mx-auto w-full mt-32 pt-16 pb-24 px-1 bg-custom-orange border-y-4 border-black">
                 <h2 className="text-6xl md:text-7xl font-Clash">What I Know</h2>
                 <div className="max-w-sm lg:max-w-4xl mx-auto grid grid-cols-2 gap-y-4 md:gap-x-10 lg:grid-cols-4 lg:gap-y-8 pt-12 justify-items-center">
@@ -41,6 +44,7 @@ export const AboutPage = () => {
                 </div>
             </div>
 
+            {/* Education Section */}
             <div className="container mx-auto my-32 px-18 lg:px-28 gap-20 flex flex-col lg:flex-row lg:justify-between">
                 <div className="lg:w-3/4 lg:text-left space-y-5">
                     <h2 className="text-5xl font-Clash pb-2">Education</h2>
@@ -63,6 +67,7 @@ export const AboutPage = () => {
                     </p>
                 </div>
 
+                {/* Experiences Section */}
                 <div className="lg:w-1/2 lg:text-left space-y-5">
                     <h2 className="text-5xl font-Clash">Experiences</h2>
                     <div className="lg:flex py-2">

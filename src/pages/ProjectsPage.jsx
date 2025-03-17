@@ -1,5 +1,6 @@
 import { Arrow } from "../components/Arrow";
 import ImageSlider from "../components/ImageSlider";
+import WebCard from "../components/project-cards/WebCard";
 import ProjectKeywords from "../components/ProjectKeywords";
 
 export const ProjectsPage = () => {
@@ -11,67 +12,38 @@ export const ProjectsPage = () => {
                 <h2 className="text-4xl font-Clash font-semibold text-left mt-14 mb-6">Web Development</h2>
             </div>
 
-            <div className='container mx-auto px-10 lg:px-24 mb-20 lg:mb-32 lg:flex lg:flex-row justify-between items-center gap-10'>
-                <div className="lg:max-w-1/2 lg:text-left space-y-5">
-                    <div className="bg-custom-baby-blue max-w-max pl-3 pr-2 md:pl-5 md:pr-3 pt-3 shadow-dark-shadow-lg-left border-3 border-black">
-                        <img src="/projects-img/StudyPal.png" alt="StudyPal website"></img>
-                    </div>
-                </div>
+            <WebCard 
+                title="StudyPal E-Learning Website"
+                description="StudyPal is an e-learning web app that connects students with tutors or study groups for collaboration in their courses. I worked in a team of 4, focusing on designing and developing the user profile feature." 
+                projectBgColor="custom-baby-blue"
+                kwBgColor="bg-yellow-200"
+                keywords={["Vue.js", ".NET 6", "MongoDB"]}
+                imgSrc="/projects-img/StudyPal.png"
+                prototypeLink="https://www.figma.com/proto/E1mXKGUZki5KgCGzkU0Igc/StudyPal-Design?node-id=14-3&p=f&t=MstTTGzqGSkY1QPp-1&scaling=min-zoom&content-scaling=fixed&page-id=14%3A2&starting-point-node-id=14%3A3"
+                githubLink="https://github.com/MinhNguyenD/StudyPal"
+            />
 
-                <div className="lg:w-1/2 mt-10 lg:mt-0 text-left space-y-4">
-                    <h3 className="text-3xl font-Clash font-semibold">StudyPal E-Learning Website</h3>
-                    <ProjectKeywords bgColor="bg-yellow-200" keywords={["Vue.js", ".NET 6", "MongoDB"]} />
-                    <p>StudyPal is an e-learning web app that connects students with tutors or study groups for collaboration in their courses. I worked in a team of 4, focusing on designing and developing the user profile feature.</p>
-                    <a href="https://www.figma.com/proto/E1mXKGUZki5KgCGzkU0Igc/StudyPal-Design?node-id=14-3&p=f&t=MstTTGzqGSkY1QPp-1&scaling=min-zoom&content-scaling=fixed&page-id=14%3A2&starting-point-node-id=14%3A3" target="_blank" className="text-xl md:text-2xl pt-5 inline-flex items-center gap-2 hover:underline" rel="noreferrer">Visit prototype
-                        <Arrow />
-                    </a> 
-                    <br />
-                    <a href="https://github.com/MinhNguyenD/StudyPal" target="_blank" className="text-xl md:text-2xl inline-block inline-flex items-center gap-2 hover:underline" rel="noreferrer">Visit GitHub
-                        <Arrow />
-                    </a>
-                </div>
-            </div>
+            <WebCard 
+                title="Pawfect Match Website"
+                description="Pawfect Match simulates features which lets users browse pets by category and sends a personalized confirmation email after selection. The website is built and hosted using Docker and AWS." 
+                projectBgColor="red-500"
+                kwBgColor="bg-custom-baby-green"
+                keywords={["React", "NodeJS", "AWS"]}
+                videoSrc="/video/Pawfect Match.mp4"
+                githubLink="https://github.com/ltieu12/Pawfect-Match"
+                isReverse
+            />
 
-            <div className='container mx-auto px-10 lg:px-24 mb-20 lg:mb-32 flex flex-col-reverse lg:flex-row justify-between items-center gap-10'>
-                <div className="lg:w-1/2 text-left space-y-4">
-                    <h3 className="text-3xl font-Clash font-semibold">Pawfect Match Website</h3>
-                    <ProjectKeywords bgColor="bg-custom-baby-green" keywords={["React", "NodeJS", "AWS"]} />
-                    <p>Pawfect Match simulates features which lets users browse pets by category and sends a personalized confirmation email after selection. The website is built and hosted using Docker and AWS.</p>
-                    <a href="https://github.com/ltieu12/Pawfect-Match" target="_blank" className="text-xl md:text-2xl inline-block pt-5 inline-flex items-center gap-2 hover:underline" rel="noreferrer">Visit GitHub
-                        <Arrow />
-                    </a>
-                </div>
-
-                <div className="lg:w-1/2 lg:text-left space-y-5">
-                    <div className="bg-red-500 px-5 md:px-7 pt-5 pb-8 md:pb-14 shadow-dark-shadow-lg-left lg:shadow-dark-shadow-lg border-3 border-black">
-                        <video className="w-full h-full border-2 border-black rounded-xl shadow-[5px_6px_15px_rgba(0,0,0,0.5)]" autoPlay controls>
-                            <source src="/video/Pawfect Match.mp4"></source>
-                            Pawfect Match run-through video    
-                        </video>
-                    </div>
-                </div>
-            </div>
-
-            <div className='container mx-auto px-10 lg:px-24 mb-20 lg:mb-32 lg:flex lg:flex-row justify-between items-center gap-10'>
-                <div className="lg:max-w-1/2 text-left space-y-5">
-                    <div className="bg-purple-400 max-w-max pl-3 pr-2 md:pl-5 md:pr-3 pt-2 shadow-dark-shadow-lg-left border-3 border-black">
-                        <img src="/projects-img/Portfolio.png" alt="Portfolio website"></img>
-                    </div>
-                </div>
-
-                <div className="lg:w-1/2 lg:text-left mt-10 lg:mt-0 text-left space-y-4">
-                    <h3 className="text-3xl font-Clash font-semibold">Personal Portfolio</h3>
-                    <ProjectKeywords bgColor="bg-orange-300" keywords={["React", "Tailwind", "Figma"]} />
-                    <p>What can I say more? You're looking at it! This website summarizes all of my experiences as well as projects I have done so far.</p>
-                    <a href="https://www.figma.com/proto/eiOV8lAKvW46a7AHdt5b7A/Portfolio?node-id=2-2&t=6kOpVcyWhAGAz4q7-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank" className="text-xl md:text-2xl pt-5 inline-flex items-center gap-2 hover:underline" rel="noreferrer">Visit prototype
-                        <Arrow />
-                    </a> 
-                    <br />
-                    <a href="https://github.com/ltieu12/my-portfolio" target="_blank" className="text-xl md:text-2xl inline-flex items-center gap-2 hover:underline" rel="noreferrer">Visit GitHub
-                        <Arrow />
-                    </a>
-                </div>
-            </div>
+            <WebCard 
+                title="Personal Portfolio"
+                description="What can I say more? You're looking at it! This website summarizes all of my experiences as well as projects I have done so far." 
+                projectBgColor="purple-400"
+                kwBgColor="bg-orange-300"
+                keywords={["React", "Tailwind", "Figma"]}
+                imgSrc="/projects-img/Portfolio.png"
+                prototypeLink="https://www.figma.com/proto/eiOV8lAKvW46a7AHdt5b7A/Portfolio?node-id=2-2&t=6kOpVcyWhAGAz4q7-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
+                githubLink="https://github.com/ltieu12/my-portfolio"
+            />
 
             {/* Mobile Design Section */}
             <div className="container mx-auto px-10 lg:px-24 mt-18">
